@@ -17,11 +17,21 @@
 <input type="text" name="alias" id="alias" class="fancy_form" >
 
 <%= form_for @login , html: {class: "fancy_form"} do |f| %>
+  <%= f.label :email, 'email'%>
   <%= f.text_field :email%>
+
+  <%= f.label :username, 'username'%>
   <%= f.text_field :username %>
+
+  <%= f.label :pin, 'pin'%>
   <%= f.text_field :pin %>
+
+  <%= f.label :website, 'website'%>
   <%= f.text_field :website %>
+
+  <%= f.label :address, 'address'%>
   <%= f.text_field :address %>
+  
+  <%= f.label :alias, 'alias'%>
   <%= f.text_field :alias%>
 <% end %>
-  
